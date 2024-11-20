@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(to right, #84c4e4, #6bcf85);
+    box-shadow: 0px 3px 10px #464646;
+    margin-bottom: 4rem;
+}
+
+nav img {
+    height: 5rem;
+}
+
+/* Estilos do formulário */
+#h1 {
+    font-family: 'Matemasie';
+    font-weight: 100;
+    text-align: center;
+    background: linear-gradient(135deg, #6bcf85, #84c4e4);
+    color: #fff;
+    padding: 25px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 1.8rem;
+}
+
+.form-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.form-container {
+    padding: 40px 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+    font-weight: 600;
+}
+
+input {
+    font-family: 'Montserrat';
+}
+
+option {
+    font-family: 'Montserrat';
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #6bcf85;
+    outline: none;
+    box-shadow: 0 0 8px rgba(107, 207, 133, 0.3);
+}
+
+#submitBttn {
+    width: 100%;
+    background-color: #6bcf85;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submitBttn:hover {
+    background-color: #5abb74;
+    transform: translateY(-2px);
+}
+
+#submitBttn:active {
+    background-color: #4aa964;
+    transform: translateY(0);
+}
+
+/* Seção explicativa */
+.info-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 30px;
+}
+
+.info-section h2 {
+    font-size: 1.5rem;
+    color: #6bcf85;
+    margin-bottom: 15px;
+}
+
+.info-section p,
+.info-section ul {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+
+    .form-container,
+    .info-section {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin-left: 3rem;
+    color: #fff;
+    font-family: 'Matemasie';
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    font-family: 'Montserrat';
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.content {
+    flex: 1; 
+}
+
+@media screen and (max-width: 999px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+}
+
+footer {
+    padding: 1rem;
+    width: 100%;
+    color: var(--color-neutral-40);
+    margin-top: 3rem;   /*mover rodapé para baixo*/
+    background-color: #1d1d1d;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; 
+    padding: 2rem 3.5rem;
+}
+
+#footer_content p {
+    color: #fff;
+    max-width: 10rem;
+    font-family: 'Montserrat';
+}
+
+#footer_nome h1 {
+    color: #fff;
+    margin-bottom: 0.75rem;
+    font-family:"Matemasie";
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+    color: #fff;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#footer_copyright {
+    color: #7f7f7f;
+    display: flex;
+    justify-content: end;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    font-family: 'Arial';
+}
+
+.footer-pag {
+    list-style: none;
+    color: #fff;
+}
+
+.footer-pag h3 {
+    font-family: 'Montserrat';
+}
+
+.footer-pag a {
+    font-family: 'Montserrat';
+    color: #fff;
+    margin-bottom: 3rem;
+    
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+nav .fa-solid {
+    color: white;
+    align-items: center;
+}
+
+body.dark-mode {
+    background-color: #252525;
+    color: white;
+}
+
+body.dark-mode .nav-link {
+    color: white;
+}
+
+.dark-mode .form-wrapper {
+    background-color: #dbdbdb;
+}
+
+.dark-mode input {
+    background-color: #b9b9b9;
+}
+
+.dark-mode select {
+    background-color: #b9b9b9;
+}

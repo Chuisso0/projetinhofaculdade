@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/adoção/adoption.css">
+
+    <script src="/adoção/adoptionarea.js"></script>
+
+    <link rel="shortcut icon" href="../img/starpet_logo.png" type="image/x-icon">
+    <!--carrega o css da página-->
+    <!--carrega a biblioteca da página-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--carrega as fontes da página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Estrela Pet | Adote um Pet</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+            <img src="../img/starpet_logo.png" alt="">
+
+                <a href="#"><h1>Estrela Pet</h1></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/home/home.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="/sobre/sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="/serviços/services.html" class="nav-link"> Serviços</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Adoção</a></li>
+                    <li class="nav-item" id="toggle-theme"><a href=""><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="/login/login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <script src="/templates/template.js"></script>
+        
+    </header>
+
+    <div class="content">
+        <main>
+
+            <div id="mainH1">
+                <h1>Animais Disponíveis para Adoção</h1>
+            </div>
+
+            <p id="alert"><i class="fa-solid fa-circle-exclamation fa-fw"></i>Você precisa estar logado para adotar ou colocar um pet para adoção. <a href="/adoção/adoptform.html">Clique aqui</a> para entrar.</p>
+
+            <div class="filter">
+                <label for="animal-type">Filtrar por tipo de animal: </label>
+                <select id="animal-type" onchange="filterAnimals()">
+                    <option value="all">Todos</option>
+                    <option value="dogndcat">Cães e Gatos</option>
+                    <option value="roedores">Pequenos Roedores</option>
+                    <option value="passaros">Pássaros</option>
+                    <option value="outros">Répteis e Animais Exóticos</option>
+                </select>
+            </div>
+
+        <div class="fileiras">
+                
+            <div class="animal-card" data-type="passaro">
+                <img src="/adoção/img/bento.jpg" alt="Animal 4" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Bento</h2>
+                    <p class="animal-age">Adulto</p>
+                    <p class="animal-description">Características: Barulhento e agitado.</p>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+            <div class="animal-card" data-type="roedor">
+                <img src="/adoção/img/bidu.jpg" alt="Animal 5" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Bidu</h2>
+                    <p class="animal-age">Jovem Adulto</p>
+                    <p class="animal-description">Características: Calmo e carinhoso.</p>                                
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>        
+
+        
+                <div class="animal-card" data-type="cao_gato">
+                    <img src="/adoção/img/thorimg.jpg" alt="Animal 3" class="animal-img">
+                    <div class="animal-info">
+                        <h2 class="animal-name">Thor</h2>
+                        <p class="animal-age">Jovem Adulto</p>
+                        <p class="animal-description">Características: Energético e adora longas caminhadas.</p>
+                        <a href="#" class="adopt-button">Adotar</a>
+                    </div>
+                </div>
+        </div>   
+
+
+        <div class="fileiras">
+
+            <div class="animal-card" data-type="cao_gato">
+                <img src="/adoção/img/jiimg.jpg" alt="Animal 4" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Ji</h2>
+                    <p class="animal-age">Filhote</p>
+                    <p class="animal-description">Características: Tímida e desacostumada com contato físico. Gosta de ração de peixe.</p>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+                
+
+            <div class="animal-card" data-type="roedor">
+                <img src="/adoção/img/pacocaimg.jpg" alt="Animal 5" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Paçoca</h2>
+                    <p class="animal-age">Jovem Adulto</p>
+                    <p class="animal-description">Características: Tranquilo e comportado. Não costuma ser agitado.</p>                                
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+                
+ 
+            <div class="animal-card" data-type="passaro">
+                <img src="/adoção/img/luluimg.jpg" alt="Animal 6" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Lulu</h2>
+                    <p class="animal-age">Adulto</p>
+                    <p class="animal-description">Características: Comunicativo e meigo.</p>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fileiras">
+ 
+            <div class="animal-card" data-type="cao_gato">
+                <img src="/adoção/img/lunaimg.jpg" alt="Animal 1" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Luna</h2>
+                    <p class="animal-age">Filhote</p>
+                    <p class="animal-description">Características: Carinhosa e brincalhona.</p>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+
+
+            <div class="animal-card" data-type="exotico">
+                <img src="/adoção/img/lilo.jpg" alt="Animal 5" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Lilo</h2>
+                    <p class="animal-age">Jovem Adulto</p>
+                    <p class="animal-description">Características: Ativo. Gosta de espaço</p>   
+                    <small class="ps"><i class="fa-solid fa-circle-info fa-fw"></i> Esse animal requer cuidados especiais. 
+                    Entre em contato conosco para mais informações</small><br>                             
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+
+
+            <div class="animal-card" data-type="roedor">
+                <img src="/adoção/img/fuba.jpg" alt="Animal 6" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Fubá</h2>
+                    <p class="animal-age">Adulto</p>
+                    <p class="animal-description">Características: Costuma comer bastante.</p>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fileiras">
+
+            <div class="animal-card" data-type="exotico">
+                <img src="/adoção/img/koda.jpg" alt="Animal 4" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Koda</h2>
+                    <p class="animal-age">Adulto</p>
+                    <p class="animal-description">Características: Solitário e territorial.</p>
+                    <small class="ps"><i class="fa-solid fa-circle-info fa-fw"></i> Esse animal requer cuidados especiais. 
+                    Entre em contato conosco para mais informações</small><br>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+
+
+            <div class="animal-card" data-type="cao_gato">
+                <img src="/adoção/img/maximg.jpg" alt="Animal 2" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Max</h2>
+                    <p class="animal-age">Adulto</p>
+                    <p class="animal-description">Características: Curioso e independente.</p>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+                
+
+            <div class="animal-card" data-type="exotico">
+                <img src="/adoção/img/maya.jpg" alt="Animal 6" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Maya</h2>
+                    <p class="animal-age">Filhote</p>
+                    <p class="animal-description">Características: Apegada.</p>
+                    <small class="ps"><i class="fa-solid fa-circle-info fa-fw"></i> Esse animal requer cuidados especiais. 
+                    Entre em contato conosco para mais informações</small><br>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fileiras">
+
+            <div class="animal-card" data-type="exotico">
+                <img src="/adoção/img/nix.jpg" alt="Animal 4" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Nix</h2>
+                    <p class="animal-age">Filhote</p>
+                    <p class="animal-description">Características: Tímida e desacostumada com contato físico. Gosta de ração de peixe.</p>
+                    <small class="ps"><i class="fa-solid fa-circle-info fa-fw"></i> Esse animal requer cuidados especiais. 
+                    Entre em contato conosco para mais informações</small><br>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+                
+
+            <div class="animal-card" data-type="passaro">
+                <img src="/adoção/img/nori.jpg" alt="Animal 5" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Nori</h2>
+                    <p class="animal-age">Jovem Adulto</p>
+                    <p class="animal-description">Características: Tranquilo e comportado. Não costuma ser agitado.</p>                                
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+                
+
+            <div class="animal-card" data-type="passaro">
+                <img src="/adoção/img/pipoca.jpg" alt="Animal 6" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Pipoca</h2>
+                    <p class="animal-age">Adulto</p>
+                    <p class="animal-description">Características: Comunicativo e meigo.</p>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div class="fileiras">
+
+            <div class="animal-card" data-type="roedor">
+                <img src="/adoção/img/sol.jpg" alt="Animal 4" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Sol</h2>
+                    <p class="animal-age">Filhote</p>
+                    <p class="animal-description">Características: Tímida e desacostumada com contato físico. Gosta de ração de peixe.</p>
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+                
+
+            <div class="animal-card" data-type="exotico">
+                <img src="/adoção/img/teco.jpg" alt="Animal 5" class="animal-img">
+                <div class="animal-info">
+                    <h2 class="animal-name">Teco</h2>
+                    <p class="animal-age">Jovem Adulto</p>
+                    <p class="animal-description">Características: Tranquilo e comportado. Não costuma ser agitado.</p> 
+                    <small class="ps"><i class="fa-solid fa-circle-info fa-fw"></i> Esse animal requer cuidados especiais. 
+                    Entre em contato conosco para mais informações</small><br>                               
+                    <a href="#" class="adopt-button">Adotar</a>
+                </div>
+            </div>
+        </div>    
+        
+    </div>
+
+        </main>
+
+    </div>
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_nome">
+                <h1>Estrela Pet</h1>
+                <p>Cuidar do seu amiguinho de quatro patas é um ato de amor e responsabilidade!</p>
+            </div>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                
+            </div>
+            
+            <ul class="footer-pag">
+                <li>
+                    <h3>Explore</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="/html/sobre.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adoção</a>
+                </li>
+                <li>
+                    <a href="/html/login.html" class="footer-link">Entrar</a>
+                </li>
+            </ul>
+
+                
+           
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024, Todos os direitos reservados
+        </div>
+
+    <script src="/adoção/darkmode.js"></script>     
+
+    </footer>
+
+</body>
+</html>
+
+

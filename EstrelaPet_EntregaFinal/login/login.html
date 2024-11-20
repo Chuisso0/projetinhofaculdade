@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/.templates/template.css">
+    <link rel="stylesheet" href="/login/login.css">
+    <title>EstrelaPet | Entrar</title>
+
+    <link rel="shortcut icon" href="/img/starpet_favlogo.ico" type="image/x-icon">
+    <!--carrega o css da página-->
+    <!--carrega a biblioteca da página-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--carrega as fontes da página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+            <img src="/img/starpet_logo.png" alt="">
+
+            <a href="/home/home.html"><h1>Estrela Pet</h1></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/home/home.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="/sobre/sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="/serviços/services.html" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="/adoção/adoption.html" class="nav-link">Adoção</a></li>
+                    <li class="nav-item" id="toggle-theme"><a href=""><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <script src="/templates/template.js"></script>
+        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="btninicial">
+                <div class="btnColor"></div>
+                <button id="btnSignin">Login</button>
+                <button id="btnSignup">Cadastro</button>
+            </div>
+            <form id="signin" method="post">
+                <input type="email" placeholder="Email" required>
+                <i class="fas fa-envelope iEmail"></i>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <i class="fas fa-lock iPassword"></i><br>
+                <button type="submit">Entrar</button>
+            </form>
+    
+            <form id="signup"  method="post">
+                <input type="email" placeholder="Email" required>
+                <i class="fas fa-envelope iEmail"></i>
+                <input type="password" id="password" placeholder="Senha" required>
+                <i class="fas fa-lock iPassword"></i>
+                <input type="password" id="confirm_password" placeholder="Confirme a senha" required>
+                <i class="fas fa-lock iPassword2"></i><br>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="/login/login.js"></script>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_nome">
+                <h1>Estrela Pet</h1>
+                <p>Cuidar do seu amiguinho de quatro patas é um ato de amor e responsabilidade!</p>
+            </div>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                
+            </div>
+            
+            <ul class="footer-pag">
+                <li>
+                    <h3>Explore</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="/html/sobre.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adoção</a>
+                </li>
+                <li>
+                    <a href="/html/login.html" class="footer-link">Entrar</a>
+                </li>
+            </ul>
+
+                
+           
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024, Todos os direitos reservados
+        </div>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+    .mobile-menu-icon button {
+        display: block;
+    }
+    .titulo {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+
+    .titulo h2 {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .titulo p {
+        font-size: 16px;
+        line-height: 2rem;
+    }
+
+    #p_container {
+        width: 90%;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+    }
+    #hero-text p {
+        margin: auto;
+        
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Garante que ele esteja visível */
+        position: relative; /* Permite mover com margens */
+        margin: 10px auto 0; /* Move para baixo e centraliza */
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center; /* Centraliza o logo acima */
+    }
+    div#adoptIT{
+        display: flex;
+        flex-direction: column;
+    }
+    #adoptIT img{
+        width: 25rem;
+    }
+
+
+    .artics{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #planos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        flex-direction: column; /* Coloca logo e ícone um abaixo do outro */
+        align-items: center;
+        width: 100%;
+    }
+    .valores {
+        padding: 20px 15px;
+    }
+
+    #valores_container p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        line-height: 1.5; /* Ajusta a altura da linha */
+    }
+    #footer_content{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .footer_social_media{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .footer-pag{
+        display: none;
+    }
+
+
+}

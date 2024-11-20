@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/.templates/template.css">
+    <link rel="stylesheet" href="home.css">
+    <title>EstrelaPet | Home</title>
+    <link rel="stylesheet" href="resp-home.css"> <!--Link para o css de responsividade-->
+
+    <link rel="shortcut icon" href="/img/starpet_favlogo.ico" type="image/x-icon">
+    <!--carrega o css da página-->
+    <!--carrega a biblioteca da página-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--carrega as fontes da página-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+            <img src="/img/starpet_logo.png" alt="">
+
+                <a href="#"><h1>Estrela Pet</h1></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="/sobre/sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="/serviços/services.html" class="nav-link"> Serviços</a></li>
+                    <li class="nav-item"><a href="/adoção/adoption.html" class="nav-link"> Adoção</a></li>
+                    <li class="nav-item" id="toggle-theme"><a href=""><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="/login/login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <script src="/templates/template.js"></script>
+        
+    </header>
+
+    <main>
+        <div class="content">
+
+            <div class="hero">
+
+                <div id="hero-text">
+                    <h1>Conforto e segurança para o seu pet</h1>
+
+                    <p id="hero-title">Vacinas, consultas, banho e tosa e muito mais para o seu animal!</p>
+
+                    <p id="hero-exp">No Estrela Pet você encontra um atendimento especializado e moderno por meio da tecnologia. Nossa função
+                    é cuidar tanto da saúde do pet quanto da de seu responsável, e é por isso que somos empenhados em otimizar o 
+                    máximo de tempo possível dos nossos clientes. Interessado? <a href="/serviços/services.html">Clique aqui</a> para 
+                    saber mais de nossos serviços.</p>
+
+                </div>
+
+                <img src="/img/medal.png" alt="" id="hero-img">
+
+            </div>
+        
+            <div class="guide-container">
+                <section class="guide-section">
+                    <a href="/sobre/sobre.html">
+                        <div class="section-text">
+                            <h2>Mais qualidade de vida para o seu pet</h2>
+                            <p>
+                                Nossa equipe se dedica a proporcionar o máximo de conforto e cuidado ao seu animal de estimação, 
+                                garantindo que ele receba a atenção e os cuidados necessários em todas as etapas de sua vida. 
+                                Com foco no bem-estar tanto dos animais quanto dos tutores, buscamos facilitar a sua rotina ao oferecer soluções 
+                                práticas e ágeis por meio do nosso site. Nosso objetivo é permitir que você cuide da saúde e do bem-estar do seu pet sem comprometer 
+                                seu tempo ou compromissos diários.
+                            </p>
+                        </div>
+                        <img src="/img/vetdog_pic.jpg" alt="Imagem de um cachorro">
+                    </a>
+                </section>
+            
+                <section class="guide-section">
+                    <a href="/adoção/adopt.html">
+                        <div class="section-text">
+                            <h2>Seu tempo otimizado</h2>
+                            <p>
+                                Através de nossa plataforma online, você pode agendar consultas e exames de forma rápida e prática, 
+                                além de receber diagnósticos diretamente, sem a necessidade de deslocamento. Também oferecemos um serviço diferenciado para adoção 
+                                de pets, onde, em poucos minutos, você pode conhecer e adotar um novo companheiro, contribuindo para o bem-estar de animais que 
+                                precisam de um lar.
+                            </p>
+                        </div>
+                        <img src="/img/vetcat_pic.jpg" alt="Imagem de um gato">
+                    </a>
+                </section>
+            </div>
+
+
+            <h3 id="planTitle">Garanta ao seu pet saúde e qualidade de vida através de nossos planos:</h3>
+
+            <section class="artics">
+    
+                <article class="artic">
+    
+                    <h4><i class="fa-solid fa-bolt"></i>Plano Básico</h4>
+    
+                    <p><strong>R$30 a R$60/mês</strong></p>
+    
+                    <p class="artP">Ideal para animais saudáveis que precisam de cuidados preventivos.</p>
+    
+                    <img src="/img/planB.png" alt="" class="artImg"><br>
+    
+                    <button onclick="location.href='#planos'" class="beneficios">Ver Benefícios</button>
+    
+                </article>
+                
+    
+                <article class="artic">
+    
+                    <h4><i class="fa-solid fa-heart"></i></i>Plano Completo</h4>
+    
+                    <p><strong>R$70 a R$120/mês</strong></p>
+    
+                    <p class="artP">Para tutores que desejam uma cobertura mais abrangente para a saúde de seus animais.</p>
+    
+                    <img src="/img/planC.png" alt="" class="artImg"><br>
+    
+                    <button onclick="location.href='#planos'" class="beneficios">Ver Benefícios</button>
+    
+                </article>
+    
+                <article class="artic">
+    
+                    <h4><i class="fa-solid fa-star"></i></i>Plano Premium</h4>
+    
+                    <p><strong>R$150 a R$300/mês</strong></p>
+    
+                    <p class="artP">Para tutores que desejam a melhor cobertura possível para a saúde de seus pets.</p>
+    
+                    <img src="/img/planP.png" alt="" class="artImg"><br>
+    
+                    <button onclick="location.href='#planos'" class="beneficios">Ver Benefícios</button>
+    
+                </article>
+    
+            </section>
+
+            <div id="adoptionInfo">
+
+                <div id="adoptIT">
+
+                    <img src="/img/adopt.png" alt="" id="adoptImg">
+
+                    <div id="adoptionText">
+
+                        <h3>Conheça o nosso Sistema de Adoção</a></h3>
+
+                        <p>
+                        Milhares de animais esperam por um lar, muitos foram abandonados ou nunca conheceram o conforto de uma família. 
+                        Ao adotar, você não só oferece a chance de uma vida melhor a um bichinho, como também ajuda a combater a 
+                        superpopulação e o abandono animal. 
+                        Adotar é um ato de amor e empatia, que pode mudar tanto a vida do pet quanto a sua. 
+                        <a href="/adoção/adoption.html">Clique aqui</a> para adotar um pet.</p>
+
+                    </div>    
+                </div>
+
+
+            </div>
+
+            <h3 id="planosTitle">Confira os benefícios de nossos planos:</h3>
+            <section class="planos" id="planos">
+ 
+
+                <article class="plano" id="planoB">
+    
+                    <h4>Plano Básico<i class="fa-solid fa-paw"></i></h4>
+    
+                    <ul>
+                        <li>Consultas Veterinárias</li>
+                        <li>Vacinação</li>
+                        <li>Exames de Rotina</li>
+                        <li>Desparasitantes</li>
+                        <li>Orientação Sobre Nutrição</li>
+                    </ul>
+                    <button id="beneficiosBttn"><a href="/login/login.html">Contratar</a></button>
+    
+                </article>
+    
+    
+                <article class="plano" id="planoC">
+    
+                    <h4>Plano Completo<i class="fa-solid fa-paw"></i></h4>
+    
+                    <ul>
+                        <li>Consultas Veterinárias</li>
+                        <li>Vacinação</li>
+                        <li>Exames de Rotina</li>
+                        <li>Desparasitantes</li>
+                        <li>Orientação Sobre Nutrição</li>
+                        <li>Cuidados Odontológicos</li>
+                        <li>Acompanhamento de Doenças Crônicas</li>
+                        <li>Orientação sobre Comportamento</li>
+                    </ul>
+                    <button id="beneficiosBttn"><a href="/login/login.html">Contratar</a></button>
+    
+                </article>
+    
+    
+                <article class="plano" id="planoP">
+    
+                    <h4>Plano Premium<i class="fa-solid fa-paw"></i></h4>
+    
+                    <ul>
+                        <li>Consultas Veterinárias</li>
+                        <li>Vacinação</li>
+                        <li>Exames de Rotina</li>
+                        <li>Desparasitantes</li>
+                        <li>Orientação Sobre Nutrição</li>
+                        <li>Cuidados Odontológicos</li>
+                        <li>Acompanhamento de Doenças Crônicas</li>
+                        <li>Orientação sobre Comportamento</li>
+                        <li>Atendimento Emergencial</li>
+                        <li>+ Serviços como Castração, Atendimento Domiciliar ou Serviços de Estética</li>
+                    </ul>
+                    <button id="beneficiosBttn"><a href="/login/login.html">Contratar</a></button>
+
+                </article>
+    
+    
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_nome">
+                <h1>Estrela Pet</h1>
+                <p>Cuidar do seu amiguinho de quatro patas é um ato de amor e responsabilidade!</p>
+            </div>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                
+            </div>
+            
+            <ul class="footer-pag">
+                <li>
+                    <h3>Explore</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="/html/sobre.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adoção</a>
+                </li>
+                <li>
+                    <a href="/html/login.html" class="footer-link">Entrar</a>
+                </li>
+            </ul>
+
+                
+           
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024, Todos os direitos reservados
+        </div>
+    </footer>
+    <script src="/home/home.js"></script>
+</body>
+</html>
+
+
